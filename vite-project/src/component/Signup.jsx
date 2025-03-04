@@ -15,7 +15,7 @@ const Signup = () => {
         try {
             if (password && fullName && username && gender && confirmPassword) {
                 if (password === confirmPassword) {
-                    const checkSignup = await axios.post("http://localhost:8765/api/auth/signup", {
+                    const checkSignup = await axios.post("https://task-manager-l2uw.vercel.app/api/auth/signup", {
                         username,
                         fullName,
                         gender,
